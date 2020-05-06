@@ -1,0 +1,43 @@
+@mixin font {
+    font-family: $menu-font;
+}
+
+@mixin logo {
+    padding: .5rem 1rem;
+    font-size: larger;
+}
+
+@mixin nav-menu {
+    padding: 1em;
+
+    ul {
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: $dark-blue;
+
+        @media (max-width: $layout-breakpoint-small) {
+            flex-flow: column nowrap;
+        }
+    }
+
+    li {
+        flex-grow:1; 
+        text-align:center;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $beige; 
+            color: $dark-blue;
+        }  
+        
+        a {
+            color: $light-grey;
+            display: block;
+            text-decoration: none;
+            padding: .5em 1em;
+        }
+    }
+}

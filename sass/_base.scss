@@ -1,0 +1,12 @@
+:root {
+    box-sizing: content-box;
+    @include font;
+}
+
+.logo {
+    @include logo;
+}
+
+nav {
+    @include nav-menu;
+}

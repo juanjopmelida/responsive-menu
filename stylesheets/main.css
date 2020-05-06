@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+/* line 1, ../sass/_base.scss */
+:root {
+  box-sizing: content-box;
+  font-family: "Open Sans";
+}
+
+/* line 6, ../sass/_base.scss */
+.logo {
+  padding: .5rem 1rem;
+  font-size: larger;
+}
+
+/* line 10, ../sass/_base.scss */
+nav {
+  padding: 1em;
+}
+/* line 13, ../sass/_mixins.scss */
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #2A324B;
+}
+@media (max-width: 460px) {
+  /* line 13, ../sass/_mixins.scss */
+  nav ul {
+    flex-flow: column nowrap;
+  }
+}
+/* line 26, ../sass/_mixins.scss */
+nav li {
+  flex-grow: 1;
+  text-align: center;
+}
+/* line 30, ../sass/_mixins.scss */
+nav li:hover {
+  cursor: pointer;
+  background-color: #f7c59f;
+  color: #2A324B;
+}
+/* line 36, ../sass/_mixins.scss */
+nav li a {
+  color: #e1e5ee;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+}
