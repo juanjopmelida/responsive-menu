@@ -39,12 +39,15 @@ nav li {
 nav li:hover {
   cursor: pointer;
   background-color: #f7c59f;
-  color: #2A324B;
 }
-/* line 36, ../sass/_mixins.scss */
+/* line 35, ../sass/_mixins.scss */
 nav li a {
   color: #e1e5ee;
   display: block;
   text-decoration: none;
   padding: .5em 1em;
+}
+/* line 41, ../sass/_mixins.scss */
+nav li a:hover {
+  color: #2A324B;
 }

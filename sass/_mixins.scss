@@ -30,7 +30,6 @@
         &:hover {
             cursor: pointer;
             background-color: $beige; 
-            color: $dark-blue;
         }  
         
         a {
@@ -38,6 +37,10 @@
             display: block;
             text-decoration: none;
             padding: .5em 1em;
+
+            &:hover{
+                color: $dark-blue;
+            }
         }
     }
 }
